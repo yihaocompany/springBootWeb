@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:http="http://www.w3.org/1999/xhtml">
+<!--所有页面共有底部-->
+
+    <div th:fragment="menu" class="superAdminInfo">
+        <div class="superFunction" id="statistics">
+            <div class="subject">
+                <ol class="am-breadcrumb  am-breadcrumb-slash">
+                    <li class="am-active am-icon-home"> 后台管理</li>
+                    <li class="am-active">仪表盘</li>
+                </ol>
+                <ul class="am-avg-sm-1 am-avg-md-4 am-margin am-padding am-text-center admin-content-list ">
+                    <li><a href="#" class="am-text-success"><span class="am-icon-btn am-icon-meh-o"></span><br/>总访问量<br/><span class="allVisitor"></span></a></li>
+                    <li><a href="#" class="am-text-warning"><span class="am-icon-btn am-icon-recycle"></span><br/>昨日访问<br/><span class="yesterdayVisitor">-1</span></a></li>
+                    <li><a href="#" class="am-text-danger"><span class="am-icon-btn am-icon-user-md"></span><br/>总用户量<br/><span class="allUser"></span></a></li>
+                    <li><a href="#" class="am-text-secondary"><span class="am-icon-btn am-icon-file-text"></span><br/>文章量<br/><span class="articleNum"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="superFunction" id="articleManagement">
+            <div class="subject">
+                <div class="articles">
+                    <div class="am-g">
+                        <div class="am-u-sm-12 " style="padding-left: 0;">
+                            <ol class="am-breadcrumb  am-breadcrumb-slash">
+                                <li class="am-active am-icon-home"> 后台管理</li>
+                                <li class="am-active">文章管理</li>
+                            </ol>
+                            <div class="articleManagementTable">
+                                <table class="table am-table am-table-bd am-table-striped admin-content-table  am-animation-slide-right">
+                                    <thead>
+                                    <tr>
+                                        <th>文章标题</th><th>发布时间</th><th>文章分类</th><th>浏览量</th><th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="tables">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="superFunction" id="articleThumbsUp">
+            <div class="subject">
+                <div class="thumbsUpManagement">
+                    <ol class="am-breadcrumb  am-breadcrumb-slash navigationBar">
+                        <li class="am-active am-icon-home"> 后台管理</li>
+                        <li class="am-active">点赞管理</li>
+                    </ol>
+                    <div class="msgContent am-animation-slide-right">
+                        <!--填充文章点赞信息-->
+                        <div style="height: 800px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="superFunction" id="articleCategories">
+            <div class="subject">
+                <div class="articleCategoriesManagement">
+                    <ol class="am-breadcrumb  am-breadcrumb-slash navigationBar">
+                        <li class="am-active am-icon-home"> 后台管理</li>
+                        <li class="am-active">分类管理</li>
+                    </ol>
+                    <div class="categoryContent">
+                        <!--分类管理-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="superFunction" id="friendLink">
+            <div class="subject">
+                <div class="friendLinkManagement">
+                    <ol class="am-breadcrumb  am-breadcrumb-slash navigationBar">
+                        <li class="am-active am-icon-home"> 后台管理</li>
+                        <li class="am-active">友链管理</li>
+                    </ol>
+                    <div class="friendLinkContent">
+                        <!--填充友链信息-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="superFunction" id="userFeedback">
+            <div class="subject">
+                <div class="userFeedbackManagement">
+                    <ol class="am-breadcrumb  am-breadcrumb-slash">
+                        <li class="am-active am-icon-home"> 后台管理</li>
+                        <li class="am-active">反馈管理</li>
+                    </ol>
+                    <div class="userFeedbackInfo">
+                        <div class="feedbackInfos  am-animation-slide-right">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="superFunction" id="privateWord">
+            <div class="subject">
+                <ol class="am-breadcrumb  am-breadcrumb-slash">
+                    <li class="am-active am-icon-home"> 后台管理</li>
+                    <li class="am-active">悄悄话</li>
+                </ol>
+                <div class="privateWord">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="admin-content-footer">
+        <hr>
+        <p class="am-padding-left">&copy; 2018-2019 易好开发 - <i class="am-icon-coffee" style="margin: 0 5px"></i>易好开发 版权所有</p>
+    </footer>
+
+</html>

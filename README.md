@@ -1,5 +1,5 @@
-# springBootWeb
-用spring boot 开发的企业站 支付短信集成在网站中
+# YihaoCompany WEB
+
 
 #### 项目链接：[www.ming.biz(http://www.ming.biz)
 

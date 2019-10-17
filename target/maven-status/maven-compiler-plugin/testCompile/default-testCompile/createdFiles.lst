@@ -1,0 +1,4 @@
+com/ming/biz/MyBlogApplicationTests.class
+com/ming/biz/service/RedisTest.class
+com/ming/biz/WebApplicationTests.class
+com/ming/biz/poolTest/DatasourceTest.class

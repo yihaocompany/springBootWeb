@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:http="http://www.w3.org/1999/xhtml">
+<span th:fragment="footer" style="background-color: #6b79ad">
+<footer  data-am-widget="footer" class="am-footer am-footer-default"  style="background-color:ghostwhite" data-am-footer="{  }">
+    <div class="am-footer-switch">
+        <span class="am-footer-ysp" data-rel="mobile" data-am-modal="{target: '#am-switch-mode'}">云适配版</span>
+        <span class="am-footer-divider">|</span>
+        <a id="godesktop" data-rel="desktop" class="am-footer-desktop"
+           href="#">电脑版</a>
+    </div>
+    <div class="am-footer-miscs ">
+        <p>
+            <a  id="httpurl"  target="_blank"><span id="tec"></span></a></p>
+        <p id="copyright"></p>
+        <p id="beian"></p>
+    </div>
+</footer>
+<div id="am-footer-modal" class="am-modal am-modal-no-btn am-switch-mode-m am-switch-mode-m-default">
+    <div class="am-modal-dialog">
+        <div class="am-modal-hd am-modal-footer-hd">
+            <a href="javascript:void(0)" data-dismiss="modal" class="am-close am-close-spin"
+               data-am-modal-close>&times;</a>
+        </div>
+        <div class="am-modal-bd">您正在浏览的是
+            <span class="am-switch-mode-owner">云适配</span>
+            <span class="am-switch-mode-slogan">为您当前手机订制的移动网站。</span>
+        </div>
+    </div>
+</div>
+<div data-am-widget="gotop" class="am-gotop am-gotop-fixed" >
+    <a id="toTop"  href="#top">
+                <span title="到顶部" style="color: white">
+                    <i class="am-icon-arrow-up"></i>
+                </span>
+    </a>
+</div>
+</span>
+
+</html>

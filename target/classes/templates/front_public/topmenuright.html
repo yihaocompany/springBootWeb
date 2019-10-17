@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:http="http://www.w3.org/1999/xhtml">
+<div class="am-topbar-right" th:if="${#httpServletRequest.remoteUser}">
+    <div class="am-dropdown" data-am-dropdown="{boundary: '.am-topbar'}">
+        <button class="personalSpace am-btn am-btn-secondary am-topbar-btn am-btn-sm am-dropdown-toggle" data-am-dropdown-toggle>
+            <span sec:authentication="name"></span>
+            <span class="am-icon-caret-down"></span>
+        </button>
+        <ul class="am-dropdown-content">
+            <li><a href="/user" sec:authorize="hasRole('ROLE_USER')">个人主页</a></li>
+            <li><a href="/superadmin" sec:authorize="hasRole('ROLE_SUPERADMIN')">后台管理</a></li>
+            <li><a href="/user" class="news">消息<span class="newsNum am-badge am-badge-danger"></span></a></li>
+            <li><a class="feedbackClick">反馈</a></li>
+            <li><a th:href="@{/logout}">退出登录</a></li>
+        </ul>
+    </div>
+</div>
+<div class="am-topbar-right" th:unless="${#httpServletRequest.remoteUser}">
+    <a href="/register" class="am-btn am-btn-primary am-topbar-btn am-btn-sm" style="color: white">注册</a>
+</div>
+<div class="am-topbar-right" th:unless="${#httpServletRequest.remoteUser}">
+    <a href="/login" class="loginBtn am-btn am-btn-primary am-topbar-btn am-btn-sm" style="color: white">登录</a>
+</div>
+<div class="am-topbar-right writing am-hide-md-down">
+    <a  href="/editor" target="_blank" style="text-decoration: none">
+        <img class="am-circle" src="https://mingbizblog.oss-cn-beijing.aliyuncs.com/public/user/avatar/wellfuture/0041Z4Qlgy71J7AXWfvf1.gif" data-src="https://zhy-myblog.oss-cn-shenzhen.aliyuncs.com/static/img/writing.png">
+        <span class="write-word">发布文章</span>
+    </a>
+</div>
+</html>
